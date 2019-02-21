@@ -6,7 +6,7 @@
  * 
  */
 
-public class Array<v>{
+public class Array<V>{
     private Object[] elements;
     private int size = 0; //数组中元素的数量
     private int capacity; //数组的容量
@@ -45,7 +45,7 @@ public class Array<v>{
                 return (V) elements[i];
             }
         }
-        return false;
+        return null;
     }
 
     private void moveUp(int i, int size){
@@ -98,13 +98,13 @@ public class Array<v>{
         array.insert(1);
         array.insert(5);
         array.insert(3);
-        array.display("初始 1、5、3：");
+        array.display("Init 1 5 3:  ");
         array.insert(4);
-        array.display("添加 4      ：");
+        array.display("add 4      : ");
         array.remove(3);
-        array.display("删除 3      ：");
-        System.out.println("查找 4：" + array.find(4));
-        System.out.println("查找 4：" + array.find(3));
+        array.display("delete 3      :  ");
+        System.out.println("find 4: " + array.find(4));
+        System.out.println("find 3: " + array.find(3));
         
     }
 
