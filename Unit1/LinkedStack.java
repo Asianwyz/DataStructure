@@ -57,6 +57,7 @@ public class LinkedStack<Item> implements Iterable<Item>{
         first = new Node();
         first.item = item;
         first.next = oldfirst;
+        
         n++;
         assert check();
     }
